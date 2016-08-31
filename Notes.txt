@@ -1,0 +1,25 @@
+Angular 2 is to create SPA (Single Page Applications).
+Traditional application is a server side application. We have a user that uses a client (browser) to contact a server. Client sends a request to a server, the server will handle the request and send back a response.We send back HTTP code that the browser should render.
+With the above approach we send a lot of requests to the server.
+
+In a single page application we re-render the page on our own without contacting the server. We re-render the page through Javascript. The client can handle the updates on its own. We need to contact the server for the initial loading and server side operations (ex database).
+
+First thing to start an Angular2 project, install angular-cli with npm: npm install -g angular-cli
+Next to use the CLI, type in: ng new <project name>. To start up the application type in: ng serve.
+
+Folder structure of an Angular2 project:
+  -config: holds some config files. Probably won't need to change much because it's mainly for testing purposes.
+  -dist: deployed folder. Build folder. Files which are actually served are in the dist folder. We let the Angular2 handle the folder. We need this folder because we're using TypeScript as it needs to be compiled into Javascript. We don't need all the node_modules installed, the required ones will be copied into the vendor folder. All the development dependencies will be left in the node_modules folder so we wouldn't upload any needless things.
+  -e2e: for end to end testing.
+  -node_modules: holds all our dependencies. All relevant dependencies will be copied into dist/vendor.
+  -public: could store any files we'd also want in our dist folder in there.
+  -src: meat of our app. Here we create our application. We have the app folder in there that holds all our components, TypeScript files etc. Index.html is for serving and loading our application. main.ts is very important. Responsible for starting up our application. system-config.ts is used for configuration System.js. tsconfig.json is used for TypeScript compilation. typings.d.ts imports typings, they are bridges between TypeScript and Javascript code.
+  -tmp: this is needed by the Angular build process.
+  -typings: houses typings.
+ Rest of the files provide configurations. angular-cli-build.js helps to implement third party libraries. angular-cli.json lets you specify different things - ex prefix and source file location.
+ 
+ What is TypeScript?
+ Adds types, modules etc to Javascript. TypeScript is compiled into Javascript. Types gives us extra security and support. When things are compiled, then in order to make it work, they're compiled into the JS way of doing things, some things are changed, some things are left out (ex types).
+ Why use TS over JS?
+ General reasons: strong typing allows compile-time errors, IDE support. Next generation JS features - classes, imports/exports.
+ With Angular2: documentation and support, TS is main language of Angular2.
