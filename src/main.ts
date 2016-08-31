@@ -6,4 +6,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(AppComponent);
+bootstrap(AppComponent); //Due to this Angular2 knows where to search for the app to render.

@@ -23,3 +23,5 @@ Folder structure of an Angular2 project:
  Why use TS over JS?
  General reasons: strong typing allows compile-time errors, IDE support. Next generation JS features - classes, imports/exports.
  With Angular2: documentation and support, TS is main language of Angular2.
+ 
+ The core concepts of an Angular2 project are components and directives. Directives are instructions in the code(HTML) telling Angular2 what to do. Tells Angular2 how to render certain pieces of your application.
