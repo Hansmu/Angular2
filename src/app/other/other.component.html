@@ -1,3 +1,6 @@
 <p>
   {{stringInterpolation}} | {{numberInterpolation}}
 </p>
+<input type="text" value="{{stringInterpolation}}">
+<input type="text" [value]="stringInterpolation"> <!-- Surrounding with brackets means that it is no longer a default HTML attribute, refers to the DOM value property. Property binding.  -->
+<p [ngClass]="{redBorder: true}">Is this styled?</p> <!-- JS object. Multiline code doesn't work with properties. -->
