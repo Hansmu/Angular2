@@ -25,3 +25,9 @@ Folder structure of an Angular2 project:
  With Angular2: documentation and support, TS is main language of Angular2.
  
  The core concepts of an Angular2 project are components and directives. Directives are instructions in the code(HTML) telling Angular2 what to do. Tells Angular2 how to render certain pieces of your application.
+ 
+ ng generate component <name> to create a new component. Adding --flat means it's not going to create another folder. --inline-template and --inline-styles would not generate external CSS and HTML files.
+ 
+ View encapsulation. Angular2 components have a Shadow DOM behind the scenes. Angular2 simulates the shadow DOM instead of just using it because older browsers do not support it.
+ 
+ To make it so you can nest HTML inside the component tags, add <ng-content></ng-content> to the component HTML. Styling for such elements would not come from that component but the parent component.
