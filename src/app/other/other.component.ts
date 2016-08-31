@@ -6,4 +6,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'other.component.html'
 })
 export class OtherComponent {
+  stringInterpolation = "This is string interpolation.";
+  numberInterpolation = 155;
 }
